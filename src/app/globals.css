@@ -1,0 +1,319 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240deg 5.79% 76.27%;
+    --foreground: 240deg 4.76% 8.24%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --primary: 82.77deg 97.16% 72.35%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 225deg 6.67% 11.76%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
+    --radius: 0.5rem;
+    --redis-gray: 183, 171, 152;
+  }
+
+  .dark {
+    --background: 240, 10%, 5%;
+    --foreground: 240deg 5.79% 76.27%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --primary: 190.29deg 51.22% 59.8%;
+    --primary-foreground: 240 5.9% 10%;
+
+    --secondary: 225deg 6.67% 11.76%;
+    --secondary-foreground: 0 0% 98%;
+
+    --border: 37, 18%, 66%, 0.5;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --opacity-color: 203, 203, 219;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground overflow-x-hidden;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    @apply bg-secondary w-0.5 rounded-full;
+  }
+
+  *::-webkit-scrollbar {
+    @apply w-0;
+  }
+}
+
+.blob {
+  background: conic-gradient(from 2.35rad, #c76000, rgba(7, 29, 228, 0.5));
+}
+
+.text-reveal {
+  display: inline;
+  background: linear-gradient(to right,
+      rgba(var(--opacity-color), 1) 0%,
+      rgba(var(--opacity-color), 1) 50%,
+      rgba(var(--opacity-color), 0.2) 50%,
+      rgba(var(--opacity-color), 0.2) 100%);
+  background-clip: text;
+  background-size: 200% 100%;
+  background-position: right bottom;
+  color: transparent;
+  background-repeat: no-repeat;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container_home {
+  position: relative;
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0a192f;
+}
+
+svg {
+  width: 100px;
+  height: 100px;
+}
+
+.hexagon {
+  fill: transparent;
+  stroke: #64ffda;
+  stroke-width: 7;
+  stroke-dasharray: 600;
+  /* Total perimeter of the hexagon */
+  stroke-dashoffset: 630;
+  /* Initially hide the stroke */
+  animation: drawHexagon 2s ease-in-out forwards;
+}
+
+@keyframes drawHexagon {
+  0% {
+    stroke-dashoffset: 600;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+text {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.shine-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shine-text {
+  font-size: 150px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.6),
+               0 0 15px rgba(255, 255, 255, 0.4), 0 0 20px rgba(255, 255, 255, 0.2),
+               0 0 25px rgba(255, 255, 255, 0.1);
+  animation: shine 2s infinite alternate;
+}
+
+@keyframes shine {
+  0% {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.6),
+                   0 0 15px rgba(255, 255, 255, 0.4), 0 0 20px rgba(255, 255, 255, 0.2),
+                   0 0 25px rgba(255, 255, 255, 0.1);
+  }
+  100% {
+      text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 0.8),
+                   0 0 30px rgba(255, 255, 255, 0.6), 0 0 40px rgba(255, 255, 255, 0.4),
+                   0 0 50px rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* Button Styles */
+.beautiful-button {
+  background-color: #6200ea; /* Purple background */
+  color: white; /* White text */
+  padding: 12px 24px; /* Padding for size */
+  font-size: 16px; /* Font size */
+  border: none; /* Remove border */
+  border-radius: 30px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(256, 256, 256, 0.2); /* Subtle shadow */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Hover Effect */
+.beautiful-button:hover {
+  background-color: #3700b3; /* Darker shade of purple */
+  transform: translateY(-4px); /* Lift effect */
+  box-shadow: 0 6px 15px rgba(256, 256, 256, 0.5); /* Enhanced shadow */
+}
+
+/* Focus Style */
+.beautiful-button:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 0 3px rgba(98, 0, 234, 0.7); /* Glow effect on focus */
+}
+/* Menu Bar Styles *//* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Menu Bar Styles */
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.menu-bar:hover {
+}
+
+/* Title Button */
+.logo-button {
+  font-size: 1.9em;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer; /* Make it look like a clickable button */
+  transition: color 0.3s ease;
+}
+
+.logo-button:hover {
+  color: #6200ea; /* Purple color on hover */
+}
+
+/* Navigation Menu Styles */
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+.menu ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin-left: 30px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: rgba(208, 0, 234, 0.6);
+  font-size: 1.1em;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu a:hover {
+  color: rgba(208, 0, 234, 1);
+}
+
+/* Hamburger Icon (for mobile view) */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  width: 30px;
+}
+
+.hamburger .bar {
+  height: 3px;
+  background-color: white;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+/* Mobile Menu Styles */
+@media (max-width: 768px) {
+  .menu {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+    display: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .menu li {
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hamburger.open .bar:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 8px;
+  }
+
+  .hamburger.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.open .bar:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    bottom: 8px;
+  }
+}
+
+.fontBig {
+  font-size: 25px;
+}
