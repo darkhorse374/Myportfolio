@@ -15,7 +15,7 @@
       "sequence": 1,
       "startDate": "2022-04-03",
       "endDate": "2025-01-03",
-      "jobTitle": "Full Stack Developer",
+      "jobTitle": "Senior Full Stack Developer",
       "jobLocation": "Odessa, Ukraine",
       "bulletPoints": [
         "Developed reusable React components and custom hooks, resulting in a 50% reduction in development efforts across 3 different projects.",
@@ -46,13 +46,13 @@
       "sequence": 3,
       "startDate": "2016-07-03",
       "endDate": "2018-11-03",
-      "jobTitle": "Junior Software Developer",
+      "jobTitle": "Software Developer",
       "jobLocation": "Warsaw, Poland",
       "bulletPoints": [
         "Streamlined processes by coordinating the transfer of 2,000+ entries of financial data from worldwide production subsidiaries to a single webbased reporting tool.",
         "Developed 3 cross-platform web apps and web backend using diverse technology stacks such as JavaScript, React, Node, and PHP, leading to increased efficiency.",
-        "Onboarded 8 new developers and provided guidance on setting up development environment.",
-        "Reviewed code from junior engineers, made improvement suggestions, and established and promoted development guidelines, best practices, and standards."
+        "Provided good advices on setting up development environment.",
+        "Made improvement suggestions, and established and promoted development guidelines, best practices, and standards."
       ]
     }
   ],
