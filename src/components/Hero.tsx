@@ -22,7 +22,7 @@ const Hero = ({ about }: HeroProps) => {
           <div className="flex items-center justify-center flex-col h-full pb-2">
             <Transition>
               <div className="shine-container">
-                <span className="shine-text">V</span>
+                <span className="shine-text">D</span>
               </div>
             </Transition>
             <div className="py-6 flex items-center flex-col">
