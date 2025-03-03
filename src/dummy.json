@@ -121,7 +121,7 @@
       "sequence": 1,
       "image": {
         "public_id": "https://www.didderlive.com/",
-        "url": "./portfolio/Didder-1.png"
+        "url": "./Didder-1.png"
       },
       "description": "I developed this completely on my own.This website made by React and Next.js and uploaded on Vercel.",
       "techStack": [
@@ -139,7 +139,7 @@
       "sequence": 2,
       "image": {
         "public_id": "https://vanly.app/",
-        "url": "./portfolio/Vanly-1.png"
+        "url": "./Vanly-1.png"
       },
       "description": "Vanly's mission is providing safe overnight parking spots which offer the opportunity for beautiful experiences, meaningful connections, and sustainable world transformations.",
       "techStack": [
@@ -156,7 +156,7 @@
       "sequence": 3,
       "image": {
         "public_id": "https://autoinsp.com/en/",
-        "url": "./portfolio/Auto-1.png"
+        "url": "./Auto-1.png"
       },
       "description": "Autoinsp is the website that make you to discover automotive anti-fraud technology.",
       "techStack": [
@@ -172,7 +172,7 @@
       "sequence": 4,
       "image": {
         "public_id": "https://www.dogue.com.au/",
-        "url": "./portfolio/Dogue-1.png"
+        "url": "./Dogue-1.png"
       },
       "description": "DOGUE is a leading Australian canine couture brand founded in 1998 by Simone Kingston. Specializing in designer doggie fashion and hiih-end pet products, It has become Australia's foremost boutique dog retailer and service provider.",
       "techStack": [
@@ -188,7 +188,7 @@
       "sequence": 5,
       "image": {
         "public_id": "https://hakimhubweb.netlify.app/",
-        "url": "./portfolio/Hakim-1.png"
+        "url": "./Hakim-1.png"
       },
       "description": "This is a platform to connect doctors and hospitals to clients.",
       "techStack": [
@@ -204,7 +204,7 @@
       "sequence": 6,
       "image": {
         "public_id": "https://bext.vc/",
-        "url": "./portfolio/Bext-1.png"
+        "url": "./Bext-1.png"
       },
       "description": "The Fintech that transforms, multiplies and facilitates your access to credit. I develop it by Vue.js for frontend, node.js for backend and postgreSQL for database.",
       "techStack": [
@@ -220,7 +220,7 @@
       "sequence": 7,
       "image": {
         "public_id": "https://condadotacos.com/",
-        "url": "./portfolio/Conda-1.png"
+        "url": "./Conda-1.png"
       },
       "description": "Condado Tacos is a restaurant that offers a diverse range of taco options, accommodating various taste preferences, from traditional to unconventional.",
       "techStack": [
@@ -236,7 +236,7 @@
       "sequence": 8,
       "image": {
         "public_id": "https://coriandershop.com.ua/",
-        "url": "./portfolio/Corian-1.png"
+        "url": "./Corian-1.png"
       },
       "description": "Online spice shop. Different product variations, beautiful and intuitive design.",
       "techStack": [
@@ -252,7 +252,7 @@
       "sequence": 9,
       "image": {
         "public_id": "https://ybg.com.ua/",
-        "url": "./portfolio/Ybg-1.png"
+        "url": "./Ybg-1.png"
       },
       "description": "Management of construction projects of commercial, public and individual facilities from preparatory work to commissioning.",
       "techStack": [
