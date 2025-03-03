@@ -10,7 +10,7 @@ interface HeroProps {
 
 const Hero = ({ about }: HeroProps) => {
   const openResume = () => {
-    window.open('./VolodymyrHuk.pdf', '_blank'); // Open PDF in new tab
+    window.open('./Danyil-Drala.pdf', '_blank'); // Open PDF in new tab
   };
   return (
     <section className="h-dvh w-dvw overflow-hidden relative" id="home">

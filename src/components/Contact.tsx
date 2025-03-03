@@ -10,12 +10,12 @@ const Contact = () => {
       <footer className="flex items-center justify-around md:px-8 px-2 py-4 text-sm mt-12">
         <Transition>
           <p className="text-[20px]">
-            developed by @ Volodymyr Huk&copy; {new Date().getFullYear()}
+            developed by @ Dinyil Drala&copy; {new Date().getFullYear()}
           </p>
         </Transition>
         <Transition>
           <p className="text-[20px]">
-            gukvolodymyr051@gmail.com
+            horsedark374@gmail.com
           </p>
         </Transition>
       </footer>

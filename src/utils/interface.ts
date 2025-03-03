@@ -2,7 +2,7 @@ export interface Portfolio {
   about: About;
   experience: Experience[];
   skills: Skill[];
-  portfolios: Portfolio[];
+  portfolios: PortSamples[];
   education: Education;
   strength: Strength[];
 }
@@ -22,7 +22,7 @@ export interface Skill {
   sequence: number;
 }
 
-export interface Portfolio {
+export interface PortSamples {
   liveurl: string;
   githuburl: string;
   title: string;

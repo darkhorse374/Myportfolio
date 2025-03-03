@@ -61,7 +61,7 @@ const About = ({ about, strength }: AboutProps) => {
         <div className="sticky ">
           <Transition>
             <img
-              src="./avatar.png"
+              src="./avatar.jpg"
               width={460}
               height={480}
               alt={about.name}

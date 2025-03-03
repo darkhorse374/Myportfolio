@@ -3,12 +3,12 @@
 import { motion } from "motion/react";
 import { useState } from "react";
 import { SectionHeading} from "./ui/Typography";
-import { Portfolio } from "../utils/interface";
+import { Portfolio, PortSamples } from "../utils/interface";
 import { useVariants } from "../utils/hooks";
 import { SlideIn, Transition } from "./ui/Transitions";
 
 interface PortfoliosProps {
-  portfolios: Portfolio[];
+  portfolios: PortSamples[];
 }
 
 function Portfolios({ portfolios }: PortfoliosProps) {
@@ -36,7 +36,7 @@ function Portfolios({ portfolios }: PortfoliosProps) {
 
 export default Portfolios;
 
-const Card = ({ title, image, description }: Portfolio) => {
+const Card = ({ title, image, description }: PortSamples) => {
   const [hover, setHover] = useState(false);
   const { setVariant } = useVariants();
 
@@ -49,6 +49,9 @@ const Card = ({ title, image, description }: Portfolio) => {
     setVariant("DEFAULT");
   };
 
+  const handleOnClick = () => {
+    window.open(`${image.public_id}`, '_blank');
+  }
   return (
     <motion.div
       layout
@@ -72,7 +75,11 @@ const Card = ({ title, image, description }: Portfolio) => {
         width={500}
         height={400}
         className="object-contain rounded-xl md:rounded-t-3xl"
+        onClick={handleOnClick}
       />
+      <h4 className="pt-10">
+        {description}
+      </h4>
     </motion.div>
   );
 };
